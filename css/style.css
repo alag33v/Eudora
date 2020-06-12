@@ -1,0 +1,280 @@
+/* 
+font-family: 'Bebas Neue', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Raleway', sans-serif; 
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* HEADER */
+
+.header {
+  background: url(../images/header/bg.jpg) top 10% center / cover no-repeat;
+  height: 100vh;
+}
+
+.menu {
+  background-color: rgba(0, 0, 0, 0.45);
+  padding: 14px 0 15px;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0 250px;
+  padding: 0;
+}
+
+.menu__item {
+}
+
+.menu__link {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu__link-main {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 72px;
+  font-weight: 700;
+  color: #e59205;
+  text-transform: capitalize;
+}
+
+.header__title {
+  font-family: 'Playfair Display', sans-serif;
+  font-style: italic;
+  font-size: 72px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  margin: 180px auto 30px;
+  max-width: 800px;
+}
+
+.header__title span {
+  color: #e59205;
+}
+
+.header__text {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.6;
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.btn {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  padding: 15px 40px;
+  display: block;
+  cursor: pointer;
+}
+
+.header__btn {
+  margin: 50px auto 0;
+}
+
+/* CATALOG */
+
+.catalog {
+}
+
+.title__wrapper {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.catalog__title {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  color: #6e7498;
+  position: relative;
+  margin: 0;
+  display: inline;
+}
+
+.catalog__title::before {
+  content: '';
+  height: 2px;
+  width: 245px;
+  top: 64%;
+  left: -280px;
+  transform: translateY(-50%);
+  background-color: #e59205;
+  position: absolute;
+}
+
+.catalog__title::after {
+  content: '';
+  height: 2px;
+  width: 245px;
+  top: 64%;
+  right: -280px;
+  background-color: #e59205;
+  position: absolute;
+}
+
+.catalog__text {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.6;
+  text-align: center;
+  color: #a4a8bc;
+  max-width: 850px;
+  margin: 50px auto;
+}
+
+.btn__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.left__btn {
+  width: 205px;
+  color: #a4a8bc;
+  border: 1px solid #a4a8bc;
+  padding: 15px;
+}
+
+.center__btn {
+  width: 205px;
+  color: #fff;
+  background-color: #e59205;
+  border: none;
+  margin: 0 60px;
+  padding: 15px;
+}
+
+.right__btn {
+  width: 205px;
+  color: #a4a8bc;
+  border: 1px solid #a4a8bc;
+  padding: 15px;
+}
+
+.catalog__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 150px;
+}
+
+.catalog__item-main {
+  padding-top: 100px;
+}
+
+.catalog__item-img {
+  max-width: 100%;
+  display: block;
+}
+
+.catalog__item-btn {
+  font-size: 24px;
+  width: 210px;
+  text-align: center;
+  color: #a4a8bc;
+  border: 1px solid #a4a8bc;
+  padding: 10px;
+}
+
+.order-now__btn {
+  width: 250px;
+  margin-bottom: 150px;
+}
+
+.catalog__item-cost {
+  font-family: 'Playfair Display', serif;
+  font-size: 72px;
+  font-weight: 700;
+  font-style: italic;
+  color: #e59205;
+}
+
+.catalog__item-text {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+  color: #6e7498;
+  margin: 0 0 25px;
+}
+
+/* GALLERY */
+
+.gallery {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+.gallery__wrapper {
+  display: flex;
+}
+
+.gallery__left {
+  width: 33.5%;
+  background-color: #e59205;
+  padding: 0 15px;
+  text-decoration: none;
+}
+
+.gallery__title {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding-top: 170px;
+}
+
+.gallery__right {
+  width: 66.5%;
+}
+
+.gallery__img {
+  max-width: 100%;
+  display: block;
+}
