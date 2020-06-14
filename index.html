@@ -18,27 +18,53 @@
   <!-- HEADER -->
 
   <header class="header">
-    <nav class="menu">
+    <nav class="nav">
       <div class="container">
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a href="#" class="menu__link">меню</a>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link nav__link-menu">меню</a>
           </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">наш магазин</a>
+          <li class="nav__item">
+            <a href="#" class="nav__link nav__link-catalog">наш магазин</a>
           </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link menu__link-main">Eudora</a>
+          <li class="nav__item">
+            <a href="#" class="nav__link nav__link-main">Eudora</a>
           </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">предложение</a>
+          <li class="nav__item">
+            <a href="#" class="nav__link nav__link-gallery">предложение</a>
           </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">контакты</a>
+          <li class="nav__item">
+            <a href="#" class="nav__link nav__link-subscribe">контакты</a>
           </li>
         </ul>
       </div>
     </nav>
+
+    <!-- Mobile navigation -->
+    <div class="container">
+      <div class="burger__button-wrapper">
+        <div class="burger__button"></div>
+      </div>
+      <nav class="header__mobile-nav">
+        <ul class="mobile-nav__list">
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link mobile-nav__link-menu" href="#">меню</a></li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link  mobile-nav__link-catalog" href="#">наш магазин</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link  mobile-nav__link-gallery" href="#">предложение</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link mobile-nav__link-subscribe" href="#">контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- END mobile navigation -->
+
+
+
     <div class="container">
       <h1 class="header__title"> Добро пожаловать на сайт <span>Eudora</span></h1>
       <p class="header__text">Мы предприятие общественного питания с широким ассортиментом блюд сложного приготовления,
@@ -51,7 +77,7 @@
 
   <section class="catalog">
     <div class="container">
-      <div class="title__wrapper">
+      <div class="catalog__title-wrapper">
         <h2 class="catalog__title">Популярные товары</h2>
       </div>
       <p class="catalog__text">Еда необходима не только для того чтобы выжить, но и сделать себя счастливым.</p>
@@ -92,7 +118,7 @@
   <section class="gallery">
     <div class="gallery__wrapper">
       <a class="gallery__left" href="#">
-        <h2 class="gallery__title" href="#">Взгляните на наше предложение</h2>
+        <h2 class="gallery__title">Взгляните на наше предложение</h2>
       </a>
       <div class="gallery__right">
         <img class="gallery__img" src="images/gallery/gallery-1.jpg" alt="">
@@ -100,6 +126,100 @@
     </div>
   </section>
 
+  <!-- MENU -->
+
+  <section class="menu">
+    <div class="container">
+      <div class="menu__title-wrapper">
+        <h2 class="menu__title">Меню</h2>
+      </div>
+      <p class="menu__text">Перечень блюд и напитков, подаваемых в ресторане.</p>
+      <div class="menu__wrapper">
+        <div class="menu__item">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            preserveAspectRatio="xMidYMid" width="87" height="69" viewBox="0 0 87 69">
+            <image
+              xlink:href="data:img/png;base64,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"
+              width="87" height="69" />
+          </svg>
+          <h3 class="menu__item-title">Мясо</h3>
+          <p class="menu__item-text">Основной пищевой продукт для большинства людей.</p>
+          <button class="btn menu__item-btn">Подробнее</button>
+        </div>
+        <div class="menu__item">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            preserveAspectRatio="xMidYMid" width="78" height="72" viewBox="0 0 78 72">
+            <image
+              xlink:href="data:img/png;base64,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"
+              width="78" height="72" />
+          </svg>
+          <h3 class="menu__item-title">Суши</h3>
+          <p class="menu__item-text">Небольшой комок, специально приготовленного риса, на который положен небольшой
+            кусочек рыбы.</p>
+          <button class="btn menu__item-btn">Подробнее</button>
+        </div>
+        <div class="menu__item">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            preserveAspectRatio="xMidYMid" width="72" height="74" viewBox="0 0 72 74">
+            <image
+              xlink:href="data:img/png;base64,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"
+              width="72" height="74" />
+          </svg>
+          <h3 class="menu__item-title">Десерт</h3>
+          <p class="menu__item-text">Завершающее блюдо стола, предназначенное для получения приятных вкусовых ощущений.
+          </p>
+          <button class="btn menu__item-btn">Подробнее</button>
+        </div>
+        <div class="menu__item">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            preserveAspectRatio="xMidYMid" width="78" height="76" viewBox="0 0 78 76">
+            <image
+              xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABMCAMAAAD0vHEkAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACr1BMVEUAAADkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgUAAAA9t84OAAAA43RSTlMAB3nY+/rSiBy+9VYBpvw2g/Cxol7cGGjLP+4nI+g+BhRc6cR+zK9bv5MRd5dt6iFZswn2OT3QH81U7UP0Bf5z/SzWSQuptBCcgQJluSbv8k6lRtcoKlWKSg26ZLh9hFogG9s7+JoPpHQDRfHPveX5aRotfE1Ip2suwBbUBLXnK1g36+CdTJDszniH0ZjHL6gkQBM8yTCJsHpXCESWRxUMod6yq4JdX933i1BqmULfCvNBF5tucDozElExT6OqrSLakuZhwY1m02Mlu7eOU480wjhsoB7ZDoDVhik1dsUZS7wdlFwaDqAAAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAFe0lEQVRYw62Y+UOURRjH3wUWElfkkEhAjiAqLy6DJFh2E0MIVOIQ4pA4BbmJFEUFjwIBLQ6pPMqkwvKITPPIilI7Ne2Qyu75R3qe993j3fed951ll/lhd+Z5vvN553pnnnk5jpY0Lq5uWneP+7hZSZo5hE+ec2eDpptHTMlr/izgvJHk46uFXz/naQuQ5n8/FwB/DzhNW4itCgziuGD4X+QsLSgQKNoQyGmwlaHO0cL8ERLO5x+EXLBTNE0E0iKFwkOQXegMTVgifjqhFAX5h53B8UvkEfN4PQoFFydo/BJxXWwuLoHSUsdpy9yg/vJoSzkGirGOwuL8sG3xK6yWx6Cc4CAt8XH+LV0pNkE5yTHaE0kISxbTuBQ9mBY7ANOlGvgX1WhrfhJsq2ZOS1vNd/SpdIl9DRgzZkwLdudp3plSx9NgzaJW0WQb0xVoq9YibN16uceI+16m3J6d40mIPuIZGk0Yttw8iitzHXjyZeYCT9NmvUEn8xXyjqgiasOfBVexrIbBvPeb9wpRKgGroVRHpXFluJNmbdhYLrI9xy+p5RX4q6+U1oCGVxUqjKqp6biEqgtqTLZaxGyq4+o3Q6ZB2g6wNSrRuLQmS79Ic0lLK5jacG23o/N5tHZIaiRDX1/YkqfA25rlZQUSfWfAtmr4397FO3fgbiapIKxgsrO2uJwKDN1V4BFhZXrhrtMtuHrwCYm28ujdFumeveGt9EYW7XuxwtrIl1JM5l4o9EmkQRGi7hD3/SF1dGRbZL9JM2A2pUJhUCY8sKTEU0Rce3BBGJ34cmkuCl4xl3EHMwzRRmi4tLNKNOYjkdF04uihsVetiwNH4DWFWXz9cNmgdcE3b+LYaQCER1T8Qxtrk8zAo2zcSlw16pK6FWUNCi+kLB3DgXmDKWt9UzyBKuk46CrZsrkge8sO3AnQtbBl83EJ2oHzAN04W7YNo7Iutg4DhdV2PBY3/F1s2WGcs7fZOozd32HLQt8F3cQoU3cSZNV29CIEQ1/XNJbsPTyO7MBx72N3T7FUQ6hKtIfHb5j1LBXuZVvURu1035qoMcjUnAHlmbMMXAaIShS9+dUf8C8i5icxU8bA4UL2+pDuSz8H54//qY9ihDsbhjIT0eo4Hb6O56muC01E7/extXwRN6EcRvPGQdNPc1zSkoTLNhacXX2+Oi6b0K8VVwzkE42tqQt35auM5mGA8qnMakwmS2UhSDceGp+p4/bRupCSQGLlR13m56CdUsfxmoMSYyr5gnZ0FWMkyHjV8NaiP2BjKvKhn1xxOLlfMpqHofY1m4E6TxLosdt11dBJSDdwcmPElq+ku9bXxwPnXeSEuFffqgabjOVP3UWimPobMmF7bh3lI37MYbh+QxmW/a35vBUFk8XkO1vVXj5mwDkoVT2swifMcef3ovv7gBAoWtMUHzDgqr4Mmc0K0ZIwavCStdueF43kpq3OGA+qW5jLxMDuBzptmB+128NSewK5I7GM+u34Ubh5jEGNADoOx1XbIl8Se4jyKeOiuMm3Ydto358O/fSzIm491JlD9dSD5xduhikP93iqJ9HOAMom3cX7MN3ViLycsJnxzGcHpeF8rBwYaddVuyiIheNOxwsR7dXuY0zcFcM0LpWzeFYpaYy/mqPuCt8p7+npjCMnbvv7VPxGOdvK4e4T83t6JVH7oKbp8yGUNHHunkzaa/F2qnSi5o8KGpD090k+m3VbXPvVh+XO+EizSVnl+uf2QMvd6HpHjVVVZ3lsD3OgU7YWTq4Yjf6Lz//9j/Umk1vbfrPn3zg44NNPmmyDTJo0dYy5SfqutebuzRgHYXNAo5QoJDdHv/XdvfRfg0FKu+bUN+aiCy23fHub8F7YvHPEb5kw2/8DBzi2qkOuezYAAAAASUVORK5CYII="
+              width="78" height="76" />
+          </svg>
+          <h3 class="menu__item-title">Рыба</h3>
+          <p class="menu__item-text">Съедобная часть рыб, а также блюда, приготовленные из них.</p>
+          <button class="btn menu__item-btn">Подробнее</button>
+        </div>
+        <div class="menu__item">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            preserveAspectRatio="xMidYMid" width="71" height="64" viewBox="0 0 71 64">
+            <image
+              xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEcAAABACAMAAAB/a5qVAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACylBMVEUAAADkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgXkkgUAAAC+c6PLAAAA7HRSTlMAEFid0PLsyp5jIz+q+diLMBuytylL+L+QfYCawvV/BwaN/rZWCwQ5g9LUKxjE0TM3u2TllVTrofQWtMiU2QF1/OIyEr1A8UHdiQMg0/pO8/daD7r9W3vjogrFF5Mfz5uIRz7q+2yjKGjtAr7wCJcuYZKxfsEVrQw1mMvbq3hGL+A4btWlckxQzmuKbRxiZcyFXi2ZoCaCT3RTx6yp9krvw8B8Qh4qpN5Jd4ZDGnlShFc0aTtwJQXW6dwRr18ZVU0NnzG1jFk9J+4UXQmmDuezPFGOXOE25Oiodsa8RbgTJKfaj4e5za5mcZGc13CdVx8AAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAFTUlEQVRYw52XiVtUVRTALyMKCAgKEiCM0ygDKAlKEIIOAmI0rMKYKCgKE8uA4QIoRCrqmOzGkksKlRJRLoiEGlogoBJlZiot2p62nD+ic98szAzvzczjfN/Mvfcsv+/d8+659z5CzIuVYJr1dIAZNrZ2My1w5xB7B0eYkFlOzlOizJ4DxuLiyh8zdwYT6vacu4fnPC9vNchROJ8fRfQ8DRMvWOijHkt8/fwZ0qLFfDABL9CYJYEGyqClVOm9zHJMUDCNeHHSHEJCqf4lS+dmR19TmIDFsjycgiICLKFIVlDfleyvRhq5Co1R0eYxMaspZoEVlz2Wvsc1L5vDLI6jmFdk3B7xCeiQGGIak5SMTilrTfqkpqGPfJ0JD+mrYnRZH0hMiyjdNGiDA53TxgyzOZRmmgJt2kwxWSKzGJQtNEdbWU3ZOWhTvGYJBSUXnafnsRjyE9FSYPZ9EqLMW+dUWMQUW8K2Sal7ner9400jJMXbd2wMo55RO3eVYCM0ciilSijbzY2Yvye/vILZ1t6ofHNvKWoyMA8FhqW2bz91EEo5nqLqgK0/LQf5wUOq2FSd/gCqDFJ9mD5q2FtsDKmzKpwuTcUR22pfH0NbjBygRm9ci2PYXzwZUlfvgBtFSkR5QyDrVtEIUDgxOkrn5LXc2CnPwx+SvXa83SThzFk5QLJS05c1U0yLyNgnycVJ0KokJqUBI1vVXRFTCu9IyVRkD4YeU2Po2SJvmBIFCx+Dj+swiSd4hMZEhp98d5k26/gWpmEjPYWY0208MHPbmXqIa1IP3wN4H5sPKOYMD0y2IlF4VtmRBaFnmfGHAJ2ENClwYdvzwEhWij9iOl1QxrQfY1aUBDcjhbmtz0A+gVx1R5kgpxVG8nFC50icOkuWy3m4oOldBObB2pBTRbCqeJyxhG6C2u1JBd20uYScuQT/enhxqnX+zXCZNnWIqKecXl6cT8FaXWylRe19tN2GiC7+HHIKbCnIygvOqxWYGqcpcGKuwEqP7TVXIVxz3l4DSJ8Ch3yWTg/KlKN9mvFJvAlQTn/v9Q5+pBuf93wxsbVifdoQzeVx9WwjV9EGI4VsgIs6SAtjjQZkY7D7BJQpwMZXT3FzSAE5w+wod4BQMlKgAd3Sf5hFcM0GvG/rFHvd4EraHViSysbxw0LHurthNXoGOdV6loXgICO1ME873p2jGCHE5xCUs3HojqHJG/b0z3QhJBEyACXa8ZcwTJv5USljLJxehhPQNErqsbdXz2IH7nigwVfasbamBoHtwnicclS4FlLw5/21nsXqLnwz6Ca/px3vgm+Zth/Yzn48s1JIsibN9w1MN2cBFH2nG9pDIV27rW4P2M4UvF0Ea9dPpdHElU1B+ppCmPMwoPsRXGfLM95tN1POUI3wHjEtpRHMl4Ynq3Ec4Huj+hrjAskEg/3D+1hNrpP2DWcbaD9P+AouQ3DW5wyMQ2MR2PHExGBBdEr1OScgk9yeWHyWiWwnEn4g+hwB+JEA8Y+8MK0/IeCBjwFnNHlVZSdEWkgYvRTS1dJIX6MimxhwyOO7IG6WmQ73ydtqJ8x6cjBM993r2E2MOETS8TNHeKrr4+0ezS4J7ZM+nyvUp7HJ/Xnsl1sC1fCvJb+dBlYJXvp7rKZSWDh9dVUXqv9o+fPKHeCQq389vX8gqVi/tPGaqmI60ozotmeezUNHxrmiYbyiP7Nrrf1Mtnsrft4s+nvF04j1Cq5oxaOIyn8iBZc39RETMsIRLR5vDG8WPmuLzrDw+plrEJ7j/+Tfiz3HHp6TWBY9Icpqa3HRf2npW2pDfONFfKO18j9wpF7yj8cQ6QAAAABJRU5ErkJggg=="
+              width="71" height="64" />
+          </svg>
+          <h3 class="menu__item-title">Сыр</h3>
+          <p class="menu__item-text">Сыр — это продукт, который традиционно делаю из молока или молочной сыворотки.</p>
+          <button class="btn menu__item-btn">Подробнее</button>
+        </div>
+        <div class="menu__item">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            preserveAspectRatio="xMidYMid" width="79" height="75" viewBox="0 0 79 75">
+            <image
+              xlink:href="data:img/png;base64,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"
+              width="79" height="75" />
+          </svg>
+          <h3 class="menu__item-title">Мороженое</h3>
+          <p class="menu__item-text">Замороженная сладкая смесь, которую готовят из молочных продуктов или соков.</p>
+          <button class="btn menu__item-btn">Подробнее</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBSCRIBE -->
+
+  <section class="subscribe">
+    <div class="container">
+      <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
+      <form class="subscribe__form">
+        <input class="subscribe__input" type="email" placeholder="Введите свой email" aria-label="Введите свой email">
+        <button class="btn subscribe__btn">Отправить</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="js/app.js"></script>
 </body>
 
 </html>
